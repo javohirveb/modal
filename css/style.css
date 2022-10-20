@@ -1,0 +1,83 @@
+@import url(https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap);
+
+body {
+  font-family: 'Ropa Sans', sans-serif;
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/modal\ bg\ img.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hidden {
+    display: none;
+} 
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+}
+
+.btn {
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+.show-btn {
+    position: fixed;
+    font-size: 22px;
+    padding: 8px 12px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 8px;
+    transition: all .5s ease-in-out;
+}
+
+.show-btn:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 6px .1px #fff;
+}
+
+.modal {
+    position: fixed;
+    max-width: 40%;
+    width: 100%;
+    color: #000;
+    background-color: rgb(232, 222, 222);
+    z-index: 100;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h3 {
+    text-transform: uppercase;
+}
+
+.close-btn {
+    font-size: 22px;
+    background-color: transparent;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backdrop-filter: blur(3px);
+}
+
+@media only screen and (max-width: 769px) {
+    .modal {
+        max-width: 80%;
+    }
+}
