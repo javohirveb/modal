@@ -63,6 +63,11 @@ body {
 .close-btn {
     font-size: 22px;
     background-color: transparent;
+    transition: all .5s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
 }
 
 .overlay {
